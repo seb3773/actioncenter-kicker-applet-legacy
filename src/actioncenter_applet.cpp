@@ -151,7 +151,7 @@ for (int i = 2; i < actionsList.count(); ++i) {
     font.setBold(true);
     textLabel->setFont(font);
 
-    int textHeight = (customDialog->height() * 0.67);
+    int textHeight = (customDialog->height() - 350);
     textLabel->setFixedHeight(textHeight);
 
     mainLayout->addWidget(textLabel);
