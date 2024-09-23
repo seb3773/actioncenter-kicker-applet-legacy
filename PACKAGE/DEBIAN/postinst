@@ -1,5 +1,5 @@
 #!/bin/bash
-cmode="dark"
+cmode="light"
 echo "-- $cmode mode"
 if (echo $LANG | grep -q "fr") then codlang="fr"
 elif (echo $LANG | grep -q "de") then codlang="de"
@@ -15,6 +15,7 @@ sudo tar -xzvf /usr/lib/actioncenter/actioncenter_assets.tar.gz -C /opt/trinity/
 sudo tar -xzvf /usr/lib/actioncenter/actioncenter_assets.tar.gz -C /opt/trinity/share/apps/actioncenter_applet/ --wildcards --strip-components=1 "$foldscripts"/*
 sudo tar -xzvf /usr/lib/actioncenter/actioncenter_assets.tar.gz -C /opt/trinity/share/apps/actioncenter_applet/ "$iconbase"
 mv -f /opt/trinity/share/apps/actioncenter_applet/$iconbase /opt/trinity/share/apps/actioncenter_applet/actioncenter.png
+>/usr/lib/actioncenter/actioncenter_assets.tar.gz
 
 
 
