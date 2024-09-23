@@ -27,6 +27,7 @@ echo
 \cp src/actioncenter_applet.desktop PACKAGE/opt/trinity/share/apps/kicker/applets/
 \cp src/.libs/actioncenter_applet_panelapplet.lai PACKAGE/opt/trinity/lib/trinity/actioncenter_applet_panelapplet.la
 \cp src/.libs/actioncenter_applet_panelapplet.so PACKAGE/opt/trinity/lib/trinity/actioncenter_applet_panelapplet.so
+strip --strip-unneeded PACKAGE/opt/trinity/lib/trinity/actioncenter_applet_panelapplet.so
 echo
 echo ">     setting arch $osarch in control file"
 sed -i 's/^Architecture:.*/Architecture: '"$osarch"'/g' PACKAGE/DEBIAN/control
